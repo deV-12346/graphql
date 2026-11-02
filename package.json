@@ -1,0 +1,53 @@
+{
+  "name": ".",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/app.js",
+  "scripts": {
+    "start": "set NODE_ENV=PRODUCTION & node dist/app.js",
+    "build": "npm run lint && tsc -p . && tsc-alias",
+    "dev": "tsx watch src/app.ts",
+    "lint": "eslint src",
+    "lint:fix": "eslint src --fix"
+  },
+  "keywords": [],
+  "author": "",
+  "type": "module",
+  "license": "ISC",
+  "dependencies": {
+    "@apollo/server": "^5.5.1",
+    "@as-integrations/express5": "^1.1.2",
+    "@graphql-tools/merge": "^9.2.4",
+    "@prisma/adapter-pg": "^7.9.1",
+    "@prisma/client": "^7.9.1",
+    "@types/bcryptjs": "^2.4.6",
+    "@types/jsonwebtoken": "^9.0.10",
+    "@types/morgan": "^1.9.10",
+    "bcryptjs": "^3.0.3",
+    "cookie-parser": "^1.4.7",
+    "cors": "2.8.6",
+    "dataloader": "^2.2.3",
+    "dotenv": "17.4.2",
+    "express": "5.2.1",
+    "helmet": "8.3.0",
+    "ioredis": "^6.0.0",
+    "jsonwebtoken": "^9.0.3",
+    "morgan": "^1.11.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "9.39.1",
+    "@types/cookie-parser": "^1.4.10",
+    "@types/cors": "2.8.19",
+    "@types/express": "5.0.6",
+    "@types/helmet": "4.0.0",
+    "@types/node": "26.2.0",
+    "eslint": "9.39.1",
+    "eslint-plugin-import": "2.32.0",
+    "globals": "17.11.0",
+    "prisma": "^7.9.1",
+    "tsc-alias": "1.9.2",
+    "tsx": "4.23.12",
+    "typescript": "5.9.3",
+    "typescript-eslint": "8.67.0"
+  }
+}
